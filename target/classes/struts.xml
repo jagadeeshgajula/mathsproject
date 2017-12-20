@@ -1,0 +1,130 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: jagadeesh -->
+ 
+<struts>
+    <package name="default" extends="struts-default" >
+        <action name="d" class="com.mavenproject2.ActionClass">
+            <result name="success">success.jsp</result>
+        </action>
+    </package>
+    <package name="area" extends="struts-default">
+        <action name="areaofcircle" class="Actionclasses.areaaction">
+            <result name="success">/success.jsp</result>
+              
+            <result name="input">/Login.jsp</result>
+        </action>
+    </package>
+    <package name="circum" extends="struts-default">
+        <action name="circumference" class="Actionclasses.circumaction">
+            <result name="success">/circumsuccess.jsp</result>
+             
+            <result name="input">/circum.jsp</result>
+        </action>
+    </package>
+    <package name="diameter" extends="struts-default">
+        <action name="diameter" class="Actionclasses.diameteraction">
+            <result name="success">/diametersuccess.jsp</result>
+             
+            <result name="input">/diameter.jsp</result>
+        </action>
+    </package>
+    <package name="square" extends="struts-default">
+        <action name="squarearea" class="Actionclasses.sqrareaaction">
+            <result name="success">/sqrsuccess.jsp</result>
+             
+            <result name="input">/sqrarea.jsp</result>
+        </action>
+    </package>
+    <package name="square2" extends="struts-default">
+        <action name="spermeter" class="Actionclasses.sqrperiaction">
+            <result name="success">/sqrperisuccess.jsp</result>
+             
+            <result name="input">/sqrperi.jsp</result>
+        </action>
+    </package>
+    <package name="rectangle" extends="struts-default">
+        <action name="rectarea" class="Actionclasses.rareaaction">
+            <result name="success">/rareasuccess.jsp</result>
+             
+            <result name="input">/rarea.jsp</result>
+        </action>
+    </package>
+    <package name="rectangle1" extends="struts-default">
+        <action name="rectperi" class="Actionclasses.recperiaction">
+            <result name="success">/rperisuccess.jsp</result>
+             
+            <result name="input">/rperi.jsp</result>
+        </action>
+    </package>
+    
+    
+    
+     <package name="algebra" extends="struts-default">
+        <action name="root" class="Actionclasses.root">
+            <result name="success">/success_1.jsp</result>
+            <result name="input">/root.jsp</result>
+        </action>
+        <action name="square" class="Actionclasses.square">
+            <result name="success">/successsquare.jsp</result>
+               <result name="input">/square.jsp</result>
+        </action> 
+        <action name="root_loop" class="Actionclasses.root_loop">
+            <result name="success">/success_loop.jsp</result>
+               <result name="input">/root_loop.jsp</result>
+        </action>
+        <action name="square_loop" class="Actionclasses.square_loop">
+            <result name="success">/successsquare_loop.jsp</result>
+               <result name="input">/suqare_loop.jsp</result>
+        </action> 
+        <action name="log" class="Actionclasses.log">
+            <result name="success">/logsuccess.jsp</result>
+            <result name="input">/log.jsp</result>
+        </action> 
+        <action name="lcm" class="Actionclasses.lcm">
+            <result name="success">/lcmsuccess.jsp</result>
+            <result name="input">/lcm.jsp</result>
+        </action>
+        <action name="hcf" class="Actionclasses.hcf">
+            <result name="success">/hcfsuccess.jsp</result>
+            <result name="input">/hcf.jsp</result>
+        </action>
+        
+        </package>
+        
+        
+        
+        
+        <package name="trigo" extends="struts-default">
+        <action name="radvalue" class="Actionclasses.javadegtorad">
+            <result name="success">/successdegtorad.jsp</result>
+            <result name="input">/degtorad.jsp</result>
+        </action>
+        </package>
+        <package name="degree" extends="struts-default">
+        <action name="degvalue" class="Actionclasses.javaradtodeg">
+            <result name="success">/successradtodeg.jsp</result>
+            <result name="input">/radtodeg.jsp</result>
+        </action>
+        </package>
+        <package name="klaklaj" extends="struts-default">
+        <action name="hypvalue" class="Actionclasses.hypaction">
+            <result name="success">/successhyp.jsp</result>
+            <result name="input">/trihyplogin.jsp</result>
+        </action>
+        <action name="adjvalue" class="Actionclasses.adjaction">
+            <result name="success">/successadj.jsp</result>
+            <result name="input">/triadjlogin.jsp</result>
+        </action>
+        <action name="opvalue" class="Actionclasses.opactions">
+            <result name="success">/successop.jsp</result>
+            <result name="input">/trioplogin.jsp</result>
+        </action>
+        <action name="table" class="Actionclasses.tableaction">
+            <result name="success">/successtable.jsp</result>
+            <result name="input">/pythatablelogin.jsp</result>
+        </action>
+    </package>
+</struts>
